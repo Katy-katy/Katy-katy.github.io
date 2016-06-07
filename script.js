@@ -704,5 +704,3 @@ legend.append("text")
     .text(function (d, i) {
         return map_numb[i];
     });
-
-//
