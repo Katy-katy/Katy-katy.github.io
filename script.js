@@ -15,39 +15,6 @@ function niceNumber(x) {
 
 }
 //Taking M# or F# and giving correct age range
-
-function targetType2(x) {
-    target = x;
-
-    if (target == "M1") {
-        return (" ");
-    } else if (target == "M2") {
-        return ("20-29");
-    } else if (target == "M3") {
-        return ("30-39");
-    } else if (target == "M4") {
-        return ("40-49");
-    } else if (target == "M5") {
-        return ("50-59");
-    } else if (target == "M6") {
-        return ("60 & Over");
-    } else if (target == "F1") {
-        return (" ");
-    } else if (target == "F2") {
-        return ("20-29");
-    } else if (target == "F3") {
-        return ("30-39");
-    } else if (target == "F4") {
-        return ("40-49");
-    } else if (target == "F5") {
-        return ("50-59");
-    } else if (target == "F6") {
-        return ("60 & Over");
-    } else {
-        return ("Error");
-    }
-
-}
 function targetType(x) {
     target = x;
 
@@ -355,17 +322,6 @@ d3.csv("datasetfor2012.csv", function (data) {
         .ease("spring")
         .duration(1000)
         .attrTween("d", tweenPie);
-                    
-    g.append("text")
-         .attr("transform", function (d) {
-             return "translate(" + labelArc.centroid(d) + ")";
-         })
-          .attr("dy", ".35em")
-          .text(function (d) {
-           //   return d.data.age + "   $" + numberWithCommas(d.data.total)
-          //   return d.data.age;
-            return targetType2(d.data.age);
-          });
 
 });
             
@@ -395,19 +351,7 @@ d3.csv("datasetfor2012.csv", function (data) {
         .transition()
         .ease("spring")
         .duration(1000)
-        .attrTween("d", tweenPie);
-                
-                
-        g.append("text")
-         .attr("transform", function (d) {
-             return "translate(" + labelArc.centroid(d) + ")";
-         })
-          .attr("dy", ".35em")
-          .text(function (d) {
-           //   return d.data.age + "   $" + numberWithCommas(d.data.total)
-          //   return d.data.age;
-            return targetType2(d.data.age);
-          });
+        .attrTween("d", tweenPie);   
 });    
             })
             .on("mouseout", function (d) {
@@ -552,17 +496,6 @@ d3.csv("datasetfor2014.csv", function (data) {
         .ease("spring")
         .duration(1000)
         .attrTween("d", tweenPie);
-                    
-        g.append("text")
-         .attr("transform", function (d) {
-             return "translate(" + labelArc.centroid(d) + ")";
-         })
-          .attr("dy", ".35em")
-          .text(function (d) {
-           //   return d.data.age + "   $" + numberWithCommas(d.data.total)
-          //   return d.data.age;
-            return targetType2(d.data.age);
-          });
 
 });
             
@@ -592,18 +525,7 @@ d3.csv("datasetfor2014.csv", function (data) {
         .transition()
         .ease("spring")
         .duration(1000)
-        .attrTween("d", tweenPie); 
-                
-        g.append("text")
-         .attr("transform", function (d) {
-             return "translate(" + labelArc.centroid(d) + ")";
-         })
-          .attr("dy", ".35em")
-          .text(function (d) {
-           //   return d.data.age + "   $" + numberWithCommas(d.data.total)
-          //   return d.data.age;
-            return targetType2(d.data.age);
-          });
+        .attrTween("d", tweenPie);   
 });  
             })  
             .on("mouseout", function (d) {
@@ -704,3 +626,5 @@ legend.append("text")
     .text(function (d, i) {
         return map_numb[i];
     });
+
+//
