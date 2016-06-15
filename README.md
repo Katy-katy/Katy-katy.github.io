@@ -1,8 +1,5 @@
-# CMPS 165: Data Programming and Visualization - Cyberfraud in the US
-A d3 visualization of cyber fraud in America.
+##Cyberfraud and its Main Targets
 
-# Collaborators
-Zachary Ward
-Ekaterina Tcareva
-Umit Ceylan
-Peter Mercado
+The final project for "CMPS 165: Data Programming and Visualization" class at UCSC
+
+Created by Zachary Ward, Umit Ceylan, Peter Mercado, and Ekaterina Tcareva in collaboration with Suresh K Lodha and Karthik Thota for CMPS 165, "Data Programming for Visualization”, Spring 2016.
