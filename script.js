@@ -438,7 +438,8 @@ d3.csv("datasetfor2012.csv", function (data) {
                 });
             
             //legend for pies
-            var pay_col = ["#fef0d9", "#fdbb84", "#fc8d59", "#e34a33", "#b30000", "#7f0000" ];
+            //var pay_col = ["#fef0d9", "#fdbb84", "#fc8d59", "#e34a33", "#b30000", "#7f0000" ];
+	    var pay_col = ["#f1eef6", "#d0d1e6", "#a6bddb", "#74a9cf", "#2b8cbe", "#045a8d"];
             var pay_numb = ["under 20", "20 - 29", "30 - 39", "40 - 49", "50 - 59", "60 & over"];
 
             //legend creation attached to the svg
@@ -699,7 +700,8 @@ d3.csv("datasetfor2014.csv", function (data) {
                         });
                 });
                 //legend for pies
-                var pay_col = ["#fef0d9", "#fdbb84", "#fc8d59", "#e34a33", "#b30000", "#7f0000" ];
+                //var pay_col = ["#fef0d9", "#fdbb84", "#fc8d59", "#e34a33", "#b30000", "#7f0000" ];
+		var pay_col = ["#f1eef6", "#d0d1e6", "#a6bddb", "#74a9cf", "#2b8cbe", "#045a8d"];
                 var pay_numb = ["under 20", "20 - 29", "30 - 39", "40 - 49", "50 - 59", "60 & over"];
 
                 //legend creation attached to the svg
